@@ -1,5 +1,6 @@
 <template>
   <div>
+    <div>版本：{{version}}</div>
     <div>b</div>
     <div v-show="isLogFn">组件b弹窗</div>
   </div>
@@ -20,6 +21,9 @@ export default {
     }
   },
   computed: {
+    version () {
+      return this.$store.getters.appNameWithVersion
+    },
     isLogFn () {
       if (this.isLog === true) {
         return true
