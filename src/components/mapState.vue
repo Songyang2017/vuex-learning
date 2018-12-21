@@ -1,7 +1,7 @@
 <template>
   <div>
     <div>mapState</div>
-    <div><input type="text" v-model="inputValue"></div>
+    <div><input type="text" v-focus="false" v-model="inputValue"></div>
     <p>input最后一位：{{inputValueLetter}}</p>
     <p></p>
     <p>appName：{{appName}}, version：{{appNameWithVersion}}</p>
@@ -16,6 +16,13 @@ export default {
   data () {
     return {
       inputValue: ''
+    }
+  },
+  directives: {
+    focus: {
+      inserted: (el, binding) => {
+        el.focus()
+      }
     }
   },
   computed: {
