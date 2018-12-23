@@ -3,7 +3,9 @@ const state = {
 }
 
 const mutations = {
-
+  changeUserName (state) {
+    state.userName = 'Soney2.0'
+  }
 }
 
 const actions = {

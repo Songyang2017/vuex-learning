@@ -1,6 +1,5 @@
 const state = {
-  appName: 'Mac',
-  count: 0
+  appName: 'Mac'
 }
 
 export default state

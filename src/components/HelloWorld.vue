@@ -3,7 +3,7 @@
     <a-page @isLogFn="lisLogFn"></a-page>
     <b-page :isLog="login"></b-page>
     <counter></counter>
-    <map-state></map-state>
+    <display></display>
   </div>
 </template>
 
@@ -11,7 +11,7 @@
 import aPage from '@/components/aPage'
 import bPage from '@/components/bPage'
 import Counter from '@/components/Counter'
-import mapState from '@/components/mapState'
+import Display from '@/components/Display'
 
 export default {
   name: 'HelloWorld',
@@ -24,7 +24,7 @@ export default {
     aPage,
     bPage,
     Counter,
-    mapState
+    Display
   },
   methods: {
     lisLogFn (data) {

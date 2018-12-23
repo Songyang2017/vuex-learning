@@ -24,9 +24,9 @@ export default {
   },
   methods: {
     ...mapMutations('counter', [
-        'increment',
-        'decrement'
-      ])
+      'increment',
+      'decrement'
+    ])
   }
 }
 </script>

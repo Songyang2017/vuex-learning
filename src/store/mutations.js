@@ -1,10 +1,12 @@
+import Vue from 'Vue'
+
 const mutations = {
-	increment(state) {
-		state.count++
-	},
-	decrement(state) {
-		state.count--
-	}
+  changeAppName (state, payload) {
+    state.appName = payload.name
+  },
+  addAnother (state, payload) {
+    Vue.set(state, payload.key, payload.value)
+  }
 }
 
 export default mutations
